@@ -15,7 +15,7 @@ const Navigation = ({ sticky }) => {
         )}
 
       <div className="columns">
-        <nav className="fastsole-primary-menu">
+        <nav className="fastsole-primary-menu" role="navigation">
           <ul>
             <li className="active">
               <a href="#">Browse all Brand</a>

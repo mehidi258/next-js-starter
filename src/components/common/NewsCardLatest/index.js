@@ -17,7 +17,7 @@ const NewsCardLatest = ({
     <article
       className={`${styles.newscard} ${listView ? styles.newscard__list__tview : ''} ${
         variant == 'square' ? styles.newscard__variant__square : ''
-      }`}>
+        }`}>
       <Link href={`${url || '#'}`}>
         <a className={styles.newscard__thumbnail}>
           <img src={thumbnail} alt={title} />
@@ -51,7 +51,7 @@ const NewsCardLatest = ({
 
         {url && (
           <Link href={`${url || '#'}`}>
-            <a className={styles.newscard__readmore}>
+            <a className={styles.newscard__readmore} aria-label={title}>
               Read more <AngleRight />
             </a>
           </Link>

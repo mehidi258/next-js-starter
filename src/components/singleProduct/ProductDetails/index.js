@@ -106,7 +106,7 @@ const ProductDetails = () => {
           </div>
 
           <div className="columns medium-5 small-12">
-            <aside className={styles.product__details__aside}>
+            <aside className={styles.product__details__aside} role="complementary">
               <h3>Where to buy</h3>
               <WhereToBuy
                 name="Nike"

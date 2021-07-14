@@ -24,6 +24,7 @@ const Header = () => {
 
   return (
     <header
+      role="banner"
       className={`${sticky ? 'fastsole-primary-header isSticky' : 'fastsole-primary-header'}`}>
       {sticky == false ? (
         <div className="row top-row align-middle">
@@ -36,8 +37,8 @@ const Header = () => {
           </div>
         </div>
       ) : (
-        ''
-      )}
+          ''
+        )}
 
       <HeaderNavigation sticky={sticky} />
     </header>
