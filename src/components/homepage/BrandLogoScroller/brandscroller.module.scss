@@ -1,0 +1,30 @@
+.brandlogo_scroller_container {
+  margin-top: 100px;
+}
+
+.single_brandlogo {
+  background: #f6f6f6;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 0;
+
+  &:hover {
+    background: #3e485d;
+
+    svg {
+      fill: #ffffff;
+    }
+  }
+
+  svg {
+    fill: #000000;
+  }
+}
+
+@media (max-width: 767px) {
+  .brandlogo_scroller_container {
+    margin-top: 50px;
+  }
+}

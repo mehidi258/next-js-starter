@@ -1,0 +1,30 @@
+.category__filters {
+  display: flex;
+  align-items: center;
+  flex-flow: row wrap;
+
+  li {
+    margin-right: 10px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 10px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      background: #f3f4f7;
+      border-radius: 3px;
+      padding: 6px 8px;
+      color: #666;
+      font-size: 13px;
+      line-height: 17px;
+
+      &:hover {
+        color: #f12026;
+      }
+    }
+  }
+}

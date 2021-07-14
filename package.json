@@ -1,0 +1,31 @@
+{
+  "name": "fastsole",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "export": "next build && next export"
+  },
+  "dependencies": {
+    "@svgr/webpack": "^5.5.0",
+    "@wordpress/base-styles": "^3.4.0",
+    "@wordpress/block-library": "^2.29.0",
+    "@zeit/next-css": "^1.0.1",
+    "@zeit/next-sass": "^1.0.1",
+    "classnames": "^2.3.1",
+    "foundation-sites": "^6.6.3",
+    "next": "10.0.9",
+    "next-offline": "^5.0.5",
+    "next-react-svg": "^1.1.2",
+    "prop-types": "^15.7.2",
+    "react": "17.0.1",
+    "react-datepicker": "^4.1.1",
+    "react-dom": "17.0.1",
+    "react-dual-range-slider": "^1.0.4",
+    "sass": "^1.32.8",
+    "webpack": "4.44.1"
+  },
+  "devDependencies": {}
+}

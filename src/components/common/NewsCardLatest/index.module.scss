@@ -1,0 +1,146 @@
+.newscard {
+  margin-bottom: 30px;
+
+  &__thumbnail {
+    display: block;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+    transition: all 0.25s;
+
+    img {
+      display: block;
+      border-radius: 10px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  &__meta {
+    font-size: 14px;
+    margin-bottom: 20px;
+
+    &__date,
+    &__author {
+      color: #7887a5;
+    }
+
+    &__author {
+      margin-left: 10px;
+
+      &:hover {
+        color: #f12026;
+      }
+    }
+
+    &__variant__sqare__date {
+      display: none;
+    }
+  }
+
+  &__content {
+    h3 {
+      font-size: 25px;
+      line-height: 35px;
+      margin: 0 0 10px;
+    }
+  }
+
+  &__readmore {
+    svg {
+      margin-left: 3px;
+      path {
+        fill: #f12026;
+      }
+    }
+
+    &:hover {
+      svg {
+        path {
+          fill: #a10a0e;
+        }
+      }
+    }
+  }
+
+  // List view styles
+  &__list__tview {
+    @media (min-width: 991px) {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 32px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .newscard__thumbnail {
+        flex-basis: 100%;
+        max-width: 270px;
+        height: 100%;
+        max-height: 220px;
+        border-radius: 10px;
+        margin-bottom: 0;
+        overflow: hidden;
+      }
+
+      .newscard__meta {
+        margin-bottom: 10px;
+      }
+
+      p {
+        margin: 0 0 10px;
+      }
+
+      .newscard__content {
+        padding: 0;
+        flex-basis: 100%;
+        max-width: calc(100% - 300px);
+
+        h3 {
+          font-size: 20px;
+          line-height: 30px;
+          margin-bottom: 5px;
+        }
+      }
+    }
+  }
+
+  // square variant styles
+  &__variant__square {
+    .newscard__thumbnail {
+      width: 100%;
+      height: 300px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .newscard__meta__variant__sqare__date {
+      color: #7887a5;
+      display: inline-block;
+    }
+
+    .newscard__meta {
+      margin-bottom: 10px;
+    }
+
+    .newscard__meta__date {
+      display: none;
+    }
+
+    h3 {
+      font-size: 22px;
+      line-height: 32px;
+    }
+  }
+}

@@ -1,0 +1,39 @@
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media (max-width: 767px) {
+    flex-flow: row wrap;
+  }
+
+  li {
+    margin-right: 6px;
+    font-size: 13px;
+    line-height: 26px;
+    color: #7887a5;
+    display: flex;
+    align-items: center;
+
+    @media (max-width: 767px) {
+      text-align: center;
+    }
+
+    a {
+      color: #7887a5;
+
+      &:hover {
+        color: #f12026;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .delimiter {
+    margin-left: 7px;
+    font-size: 21px;
+    line-height: 1;
+    display: inline-block;
+    margin-top: -3px;
+  }
+}

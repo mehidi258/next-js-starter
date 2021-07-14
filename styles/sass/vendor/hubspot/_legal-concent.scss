@@ -1,0 +1,55 @@
+.hs-form-booleancheckbox {
+  list-style: none;
+}
+
+.legal-consent-container p {
+  font-size: 15px;
+  text-align: left;
+  padding-right: 10px;
+  line-height: 1.25;
+}
+.legal-consent-container {
+  font-size: 15px;
+  text-align: left;
+}
+.legal-consent-container ul {
+  line-height: 15px;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.legal-consent-container .hs_cos_wrapper_type_form ul.inputs-list li label {
+  font-size: 15px !important;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.legal-consent-container .hs-form-booleancheckbox-display {
+  font-size: 15px !important;
+  text-align: left;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.form input[type="checkbox"],
+.form input[type="radio"] {
+  margin-right: 10px;
+  margin-top: 5px;
+  width: auto !important;
+  font-family: Copernicus, serif;
+}
+
+.legal-consent-container .hs-form-booleancheckbox-display > span {
+  display: inline;
+  margin-left: 30px !important;
+}
+
+.legal-consent-container {
+  ul.inputs-list {
+    padding-left: 0;
+  }
+
+  ul.inputs-list li label {
+    padding-left: 0;
+    display: block;
+  }
+}

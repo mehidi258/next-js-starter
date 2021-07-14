@@ -1,0 +1,16 @@
+@import "../essentials";
+
+@each $font-size in $body-text {
+  $key: nth($font-size, 1);
+
+  .has-#{$key}-font-size {
+    @include body-text($key, $body-text);
+  }
+}
+
+// Set default font sizes by override root variables.
+:root .has-default-font-size,
+:root .has-regular-font-size,
+:root .has-normal-font-size {
+  @include body-text("18-12");
+}

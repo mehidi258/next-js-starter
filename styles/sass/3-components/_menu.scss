@@ -1,0 +1,126 @@
+.fastsole-primary-menu {
+  @media (max-width: 991px) {
+    display: none;
+  }
+
+  > ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    > li {
+      margin-right: 30px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      a {
+        color: $blue_zodiac;
+        font-weight: 400;
+      }
+
+      > a {
+        font-size: 14px;
+        padding-bottom: 7px;
+        display: inline-block;
+        transition: all 0.25s;
+        line-height: 1;
+      }
+
+      &:hover {
+        > a {
+          color: $crimson;
+          border-color: $crimson;
+        }
+      }
+
+      &.active {
+        > a {
+          position: relative;
+
+          &::after {
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            content: '';
+            width: 30px;
+            height: 2px;
+            background: $blue_zodiac;
+          }
+        }
+      }
+
+      &:hover {
+        ul {
+          display: flex;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+    }
+  }
+
+  // sub menu
+  .fastsole-menu-sub-nav {
+    display: none;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    background: #fff;
+    padding: 10px 20px 30px;
+    box-shadow: 0 1px 6px 0 rgba(44, 29, 29, 0.12);
+    opacity: 0;
+    z-index: 9;
+    visibility: hidden;
+    transition: all 0.25s;
+
+    li {
+      flex-basis: 20%;
+
+      .sub-menu-brand-logo {
+        margin-bottom: 10px;
+        display: block;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        align-items: baseline;
+
+        li {
+          margin-bottom: 10px;
+
+          a {
+            font-size: 14px;
+            display: inline-block;
+
+            &:hover {
+              color: $crimson;
+            }
+          }
+        }
+      }
+
+      .view-all-brand-item {
+        display: inline-block;
+        color: #4d4d4f;
+        font-size: 13px;
+        text-transform: lowercase;
+        padding: 4px 12px;
+        border-radius: 25px;
+        border: 1px solid #4d4d4f;
+        margin-top: 20px;
+        cursor: pointer;
+        transition: all 0.25s;
+
+        &:hover {
+          color: $crimson;
+          border-color: $crimson;
+        }
+      }
+    }
+  }
+}

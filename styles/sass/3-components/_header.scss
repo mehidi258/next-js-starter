@@ -1,0 +1,120 @@
+@import 'search-item';
+@import 'menu';
+
+.fastsole-primary-header {
+  padding: 20px 0;
+  margin-bottom: 25px;
+
+  &.isSticky {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background: #fff;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+    z-index: 9;
+
+    // .top-row {
+    //   display: none;
+    // }
+
+    .fastsole-primary-menu[class] {
+      > ul > li:last-child a {
+        padding-bottom: 0;
+        margin-top: 7px;
+      }
+    }
+
+    + .content__wrap {
+      margin-top: 165px;
+
+      @media (max-width: 767px) {
+        margin-top: 73px;
+      }
+    }
+  }
+
+  .top-row {
+    margin-bottom: 38px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+    }
+  }
+
+  .fastsole-brand-logo {
+    max-width: 235px;
+    display: inline-block;
+    transition: all 0.25s;
+
+    img {
+      display: block;
+    }
+
+    @media (max-width: 991px) {
+      max-width: 157px;
+    }
+
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+
+  .mobile_header_view_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .hamburger {
+    padding: 0;
+    display: none;
+    margin-top: 4px;
+
+    @media (max-width: 991px) {
+      display: block;
+    }
+
+    &:hover {
+      background: transparent;
+      border: transparent;
+    }
+
+    .hamburger-box {
+      width: 25px;
+    }
+
+    .hamburger-inner {
+      width: 20px;
+      border-radius: 0;
+      height: 3px;
+
+      &::before,
+      &::after {
+        width: 25px;
+        border-radius: 0;
+        height: 3px;
+      }
+
+      &::before {
+        top: -6px;
+      }
+
+      &::after {
+        bottom: -6px;
+      }
+    }
+  }
+
+  .search__button_mobile {
+    all: inherit;
+    padding: 0;
+    line-height: 1;
+    display: none;
+
+    @media (max-width: 991px) {
+      display: block;
+      margin-top: 6px;
+    }
+  }
+}

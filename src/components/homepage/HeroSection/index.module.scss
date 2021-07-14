@@ -1,0 +1,17 @@
+.fastsole_hero_wrap {
+  padding: 0 0 100px;
+}
+
+/* ********** Responsive view: Tablet layout ********** */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .fastsole_hero_wrap {
+    padding: 35px 0 60px;
+  }
+}
+
+/* ********** Responsive view: Mobile layout ********** */
+@media (max-width: 767px) {
+  .fastsole_hero_wrap {
+    padding: 54px 0 48px;
+  }
+}

@@ -1,0 +1,134 @@
+/* ********** Footer block ********** */
+
+.footer-container {
+  background-color: $footer__bg;
+  // font-family: $font__secondary;
+  font-size: 15px;
+  padding-top: 56px;
+  color: $blue_zodiac;
+  line-height: 1.2rem;
+  position: relative;
+}
+.footer-container .logo {
+  margin-bottom: 35px;
+}
+.footer-first {
+  padding-bottom: 100px;
+}
+
+/* ********** Address block ********** */
+.address-container {
+  margin-bottom: 40px;
+}
+.address-container .single-address:not(:last-child) {
+  margin-bottom: 15px;
+}
+
+/* ********** Social icons ********** */
+.social-icons ul {
+  display: flex;
+}
+.social-icons ul li {
+  display: inline-flex;
+}
+.social-icons a {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  background: $white;
+  border: 1px solid $social__border;
+  border-radius: 4px;
+  height: 30px;
+  width: 30px;
+
+  svg {
+    fill: $social__border;
+  }
+}
+.social-icons a:hover {
+  background-color: $blue_zodiac;
+
+  svg path {
+    fill: $white;
+  }
+}
+.social-icons ul li:not(:last-child) {
+  margin-right: 15px;
+}
+
+/* ********** Footer Widget Menu ********** */
+.footer-container {
+  .menu-widget {
+    margin-top: 21px;
+
+    ul {
+      li {
+        &:not(:last-child) {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    a {
+      color: $blue_zodiac;
+
+      &:hover {
+        color: $black;
+      }
+    }
+  }
+}
+
+.widget-title {
+  margin-bottom: 30px;
+
+  h3 {
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 30px;
+    margin-bottom: 0;
+    letter-spacing: 0.4px;
+  }
+}
+
+/* ********** Copyright block ********** */
+.copyright__wrap {
+  background: rgba(62, 72, 93, 0.15);
+}
+.copyright-container {
+  font-weight: 600;
+  padding: 65px 0;
+  color: $blue_zodiac;
+  text-align: center;
+  z-index: 1;
+}
+
+/* ********** Responsive view: Mobile layout ********** */
+@media (max-width: 767px) {
+  .footer-container {
+    padding-top: 90px;
+  }
+  .widget,
+  .menu-widget {
+    margin-bottom: 40px;
+  }
+  .footer-first {
+    padding-bottom: 0;
+  }
+}
+
+/* ********** Responsive view: Tablet layout ********** */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .footer-container {
+    padding-top: 90px;
+  }
+  .widget,
+  .menu-widget {
+    margin-bottom: 40px;
+  }
+  .footer-first {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-bottom: 0;
+  }
+}

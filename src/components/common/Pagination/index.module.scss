@@ -1,0 +1,73 @@
+.pagination {
+  ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    svg path {
+      fill: #9da7be;
+    }
+  }
+
+  li {
+    margin-right: 6px;
+
+    &:last-child {
+      margin-right: 0;
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 30px;
+      height: 30px;
+      color: #9da7be;
+      font-size: 14px;
+      line-height: 1;
+      border-radius: 50%;
+      border: 1px solid #9da7be;
+
+      &:hover {
+        color: #fff;
+        background: #3e485d;
+        border-color: #3e485d;
+      }
+    }
+
+    &.pagination__active {
+      a {
+        color: #fff;
+        background: #3e485d;
+        border-color: #3e485d;
+        pointer-events: none;
+      }
+    }
+
+    &.prev__page,
+    &.next__page {
+      svg {
+        width: 9px;
+        height: 9px;
+      }
+    }
+
+    &.prev__page[class] {
+      margin-right: 20px;
+
+      svg {
+        transform: rotate(-180deg);
+      }
+    }
+
+    &.next__page {
+      margin-left: 15px;
+    }
+  }
+
+  &__last__page {
+    svg {
+      margin-left: 2px;
+    }
+  }
+}

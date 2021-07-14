@@ -1,0 +1,44 @@
+.newscard_content {
+  padding: 0;
+
+  h3 {
+    font-size: 25px;
+    line-height: 35px;
+    margin: 0 0 10px;
+  }
+
+  p {
+    margin: 0;
+    line-height: 26px;
+  }
+}
+
+.newscard_thumbnail {
+  display: block;
+  margin-bottom: 17px;
+  transition: all 0.25s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  img {
+    border-radius: 10px;
+    width: 100%;
+  }
+}
+
+/* ********** Responsive view: Tablet layout ********** */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .newscard_content h3 {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+
+/* ********** Responsive view: Mobile layout ********** */
+@media (max-width: 767px) {
+  .newscard {
+    margin-bottom: 25px;
+  }
+}

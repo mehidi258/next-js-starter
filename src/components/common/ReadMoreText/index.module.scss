@@ -1,0 +1,42 @@
+.readmore__text {
+  padding: 57px 35px 30px;
+  border: 1px solid #d8dee7;
+  border-radius: 10px;
+
+  @media (max-width: 767px) {
+    padding: 20px;
+  }
+
+  p {
+    margin-top: 0;
+    line-height: 26px;
+    color: #666666;
+  }
+
+  &__btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #3e485d;
+
+    svg {
+      transform: scale(0.6) rotate(90deg);
+      margin-top: 15px;
+
+      path {
+        fill: #3e485d;
+      }
+    }
+
+    &:hover {
+      color: #f12026;
+
+      svg {
+        path {
+          fill: #f12026;
+        }
+      }
+    }
+  }
+}

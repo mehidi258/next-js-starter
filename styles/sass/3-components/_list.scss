@@ -1,0 +1,22 @@
+ul.is-style-arrow {
+  list-style: none;
+  padding: 0;
+
+  li {
+    margin-bottom: 5px;
+    padding-left: 30px;
+    position: relative;
+
+    &::before {
+      content: "→";
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+    }
+  }
+}

@@ -1,0 +1,204 @@
+.btn,
+.wp-block-button__link,
+button,
+input[type='button'],
+input[type='reset'],
+input[type='submit'] {
+  background-color: $blue_zodiac;
+  border: 1px solid $blue_zodiac;
+  border-radius: $border_radius;
+  color: $white;
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  padding: 12px 26px;
+  text-align: center;
+  text-decoration: none;
+  transition: all $animation-delay;
+
+  &[disabled] {
+    background-color: $color__black-faded;
+    border-color: $color__black-faded;
+
+    &:hover,
+    &:active {
+      background: $color__black-faded;
+      border-color: $color__black-faded;
+      opacity: 1;
+    }
+  }
+
+  &:hover {
+    background: $crimson;
+    border: 1px solid $crimson;
+    color: $white;
+    transition: all $animation-delay;
+  }
+
+  &:active {
+    opacity: 0.9;
+  }
+
+  &:focus,
+  &:active {
+    opacity: 0.9;
+    outline: none;
+  }
+
+  @include breakpoint(medium) {
+    font-size: 14px;
+  }
+
+  .dark-mode & {
+    background: $peach;
+    border-color: $peach;
+    color: $black;
+
+    &:hover {
+      background: $blue;
+      border: 1px solid $blue;
+      color: $white;
+    }
+  }
+
+  &.btn--no-style {
+    all: initial;
+    cursor: pointer;
+  }
+}
+
+.btn {
+  svg {
+    margin: 0 5px;
+  }
+
+  &--block {
+    display: block;
+  }
+
+  &--outline {
+    color: $blue_zodiac;
+    background: transparent;
+    border: 1px solid $border;
+
+    &:hover {
+      color: $white;
+      background: $blue_zodiac;
+      border-color: $border;
+    }
+  }
+
+  &--white {
+    color: $blue_zodiac;
+    background: $white;
+    border-color: $white;
+
+    &:hover {
+      color: $white;
+      background: $crimson;
+      border-color: $crimson;
+    }
+  }
+
+  &--default {
+    color: $white;
+    background: #3eb75e;
+    border-color: #3eb75e;
+
+    &:hover {
+      color: $white;
+      background: darken(#3eb75e, 10);
+      border-color: darken(#3eb75e, 10);
+    }
+  }
+
+  &--warning {
+    color: $white;
+    background: $crimson;
+    border-color: $crimson;
+
+    &:hover {
+      color: $white;
+      background: darken($crimson, 10);
+      border-color: darken($crimson, 10);
+    }
+  }
+
+  &--info {
+    color: $white;
+    background: #ff6600;
+    border-color: #ff6600;
+
+    &:hover {
+      color: $white;
+      background: darken(#ff6600, 10);
+      border-color: darken(#ff6600, 10);
+    }
+  }
+}
+
+/* Reset button CSS */
+.icon-button {
+  background: transparent;
+  border: none;
+  margin: 0;
+  padding: 0;
+  width: auto;
+
+  .dark-mode & {
+    background: transparent;
+    border: 0;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: transparent;
+      border: 0;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    background: transparent;
+    border: none;
+    color: $blue;
+    opacity: 1;
+  }
+
+  &[disabled] {
+    background: transparent;
+    opacity: 0.6;
+
+    &:hover,
+    &:active {
+      background: transparent;
+      border-color: transparent;
+      color: $black;
+      opacity: 1;
+    }
+  }
+}
+
+.entry-content .wp-block-button__link {
+  color: $white;
+
+  &:hover {
+    color: $white;
+  }
+
+  .dark-mode & {
+    background: $peach;
+    color: $black;
+
+    &:hover {
+      background: $blue;
+      color: $white;
+    }
+  }
+}
+
+.wp-block-buttons {
+  margin-bottom: 2em;
+  margin-top: 2em;
+}

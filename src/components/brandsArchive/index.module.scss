@@ -1,0 +1,37 @@
+// Filters wrap
+.filters__wrap {
+  color: #666;
+  font-size: 14px;
+
+  .filters__inner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @media (max-width: 767px) {
+      flex-direction: column;
+    }
+
+    &__title {
+      margin-right: 30px;
+
+      @media (max-width: 767px) {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
+
+// sort wrap
+.product__sort__filter__wrap {
+  margin-bottom: 20px;
+}
+
+.brand__archive__wrap {
+  @media (min-width: 991px) {
+    .product__archive__fixed__width {
+      margin-left: -70px;
+    }
+  }
+}

@@ -1,0 +1,42 @@
+.wp-block-image {
+  margin-bottom: 2.6em;
+  margin-top: 2.6em;
+
+  figcaption {
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    letter-spacing: -0.15px;
+    margin-bottom: 1.4em;
+    margin-top: 1.4em;
+  }
+}
+
+/* @todo Change to SCSS */
+/* stylelint-disable declaration-no-important */
+.lazy-load-image-background {
+  display: inline !important;
+  max-width: 100% !important;
+
+  span {
+    max-width: 100% !important;
+  }
+}
+/* stylelint-enable */
+
+.lazy-load-image-background.blur {
+  filter: blur(15px);
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded {
+  filter: blur(0);
+  transition: filter 0.3s;
+}
+
+.lazy-load-image-background.blur > img {
+  opacity: 0;
+}
+
+.lazy-load-image-background.blur.lazy-load-image-loaded > img {
+  opacity: 1;
+  transition: opacity 0.3s;
+}

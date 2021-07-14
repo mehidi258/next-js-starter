@@ -1,0 +1,364 @@
+// Import google fonts
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@300;400;600;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700;900&display=swap');
+
+// Global theme font.
+$font__primary: 'Open Sans', sans-serif;
+$font__heading: 'Martel', serif;
+// $font__secondary: 'Titillium Web', sans-serif;
+
+// System fonts
+// @see @see https://www.cssfontstack.com/
+$font__secondary_arial: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+$font__secondary_times_new_roman: 'Times New Roman', TimesNewRoman, Times, Baskerville, Georgia,
+  serif;
+$font__secondary_futura: Futura, 'Trebuchet MS', Arial, sans-serif;
+$font__secondary_impact: Impact, Haettenschweiler, 'Franklin Gothic Bold', Charcoal,
+  'Helvetica Inserat', 'Bitstream Vera Sans Bold', 'Arial Black', sans-serif;
+// Global code font
+$font__code: Monaco, Consolas, 'Andale Mono', 'DejaVu Sans Mono', monospace;
+
+/*==============================
+          Font Sizes
+===============================*/
+
+// Usage eg.
+// @include body-text('18-12');
+$body-text: (
+  '96-61': (
+    // Mostly Page titles.
+    'small':
+      (
+        font-size: 61px,
+        line-height: 1.08,
+        letter-spacing: -3.82px
+      ),
+    'medium': (
+      font-size: 96px,
+      line-height: 1.02,
+      letter-spacing: -6.02px
+    )
+  ),
+  '96-50': (
+    'small': (
+      font-size: 50px,
+      line-height: 0.88,
+      letter-spacing: -3.13px
+    ),
+    'medium': (
+      font-size: 96px,
+      line-height: 1.02,
+      letter-spacing: -6.02px
+    )
+  ),
+  '96-40': (
+    'small': (
+      font-size: 40px,
+      line-height: 1.1,
+      letter-spacing: -2.51px
+    ),
+    'medium': (
+      font-size: 80px,
+      line-height: 1.05,
+      letter-spacing: -5.01px
+    ),
+    'large': (
+      font-size: 96px,
+      line-height: 1.04,
+      letter-spacing: -6.08px
+    )
+  ),
+  '85-40': (
+    'small': (
+      font-size: 40px,
+      line-height: 1.1,
+      letter-spacing: -2.51px
+    ),
+    'medium': (
+      font-size: 80px,
+      line-height: 1.05,
+      letter-spacing: -5.01px
+    ),
+    'large': (
+      font-size: 85px,
+      line-height: 0.99,
+      letter-spacing: -3.83px
+    )
+  ),
+  '85-20': (
+    'small': (
+      font-size: 20px,
+      line-height: normal,
+      letter-spacing: -0.5px
+    ),
+    'medium': (
+      font-size: 85px,
+      line-height: 1.08,
+      letter-spacing: -3.83px
+    )
+  ),
+  '60-40': (
+    'small': (
+      font-size: 40px,
+      line-height: 1.1,
+      letter-spacing: -2.51px
+    ),
+    'medium': (
+      font-size: 80px,
+      line-height: 1.05,
+      letter-spacing: -5.01px
+    ),
+    'large': (
+      font-size: 60px,
+      line-height: 1.07,
+      letter-spacing: -3.76px
+    )
+  ),
+  '58-40': (
+    'small': (
+      font-size: 40px,
+      line-height: 1.1,
+      letter-spacing: -2.51px
+    ),
+    'medium': (
+      font-size: 58px,
+      line-height: 1.12,
+      letter-spacing: -2.61px
+    )
+  ),
+  '58-25': (
+    'small': (
+      font-size: 25px,
+      line-height: 1.08,
+      letter-spacing: -1.25px
+    ),
+    'medium': (
+      font-size: 58px,
+      line-height: 1.12,
+      letter-spacing: -2.61px
+    )
+  ),
+  '45-30': (
+    'small': (
+      font-size: 30px,
+      line-height: 1.1,
+      letter-spacing: -2.51px
+    ),
+    'medium': (
+      font-size: 45px,
+      line-height: 1.08,
+      letter-spacing: -2.53px
+    )
+  ),
+  '40-40': (
+    'small': (
+      font-size: 40px,
+      line-height: 1.1,
+      letter-spacing: -2.51px
+    ),
+    'medium': (
+      font-size: 40px,
+      line-height: 1.08,
+      letter-spacing: -2.53px
+    )
+  ),
+  '40-25': (
+    'small': (
+      font-size: 25px,
+      line-height: 1.08,
+      // letter-spacing: -1.25px
+    ),
+    'medium': (
+      font-size: 40px,
+      line-height: 1.08,
+      // letter-spacing: -2.53px
+    )
+  ),
+  '40-18': (
+    'small': (
+      font-size: 18px,
+      line-height: normal,
+      letter-spacing: -0.18px
+    ),
+    'medium': (
+      font-size: 40px,
+      line-height: 1.08,
+      letter-spacing: -2.53px
+    )
+  ),
+  '30-30': (
+    'small': (
+      font-size: 30px,
+      line-height: 1.17,
+      letter-spacing: -1.4px
+    )
+  ),
+  '30-25': (
+    'small': (
+      font-size: 25px,
+      line-height: 1.08,
+      // letter-spacing: -1.25px
+    ),
+    'medium': (
+      font-size: 30px,
+      line-height: 1.17,
+      // letter-spacing: -1.4px
+    )
+  ),
+  '30-19': (
+    'small': (
+      font-size: 19px,
+      line-height: 2.11,
+      letter-spacing: -0.89px
+    ),
+    'medium': (
+      font-size: 30px,
+      line-height: 1.17,
+      letter-spacing: -1.4px
+    )
+  ),
+  '30-18': (
+    'small': (
+      font-size: 18px,
+      line-height: normal,
+      letter-spacing: -0.18px
+    ),
+    'medium': (
+      font-size: 30px,
+      line-height: 1.17,
+      letter-spacing: -1.4px
+    )
+  ),
+  '25-20': (
+    'small': (
+      font-size: 20px,
+      line-height: 1.2,
+      letter-spacing: -0.5px
+    ),
+    'medium': (
+      font-size: 25px,
+      line-height: 1.04,
+      letter-spacing: -0.25px
+    )
+  ),
+  '25-12': (
+    'small': (
+      font-size: 12px,
+      line-height: normal,
+      letter-spacing: -0.12px
+    ),
+    'medium': (
+      font-size: 25px,
+      line-height: 1.04,
+      letter-spacing: -0.25px
+    )
+  ),
+  '20-18': (
+    'small': (
+      font-size: 18px,
+      line-height: normal,
+      letter-spacing: -0.18px
+    ),
+    'medium': (
+      font-size: 20px,
+      line-height: normal,
+      letter-spacing: -0.2px
+    )
+  ),
+  '18-25': (
+    'small': (
+      font-size: 25px,
+      line-height: 1.08,
+      letter-spacing: -1.25px
+    ),
+    'medium': (
+      font-size: 18px,
+      line-height: normal,
+      letter-spacing: -0.18px
+    )
+  ),
+  '18-18': (
+    // Single Blog.
+    'small':
+      (
+        font-size: 18px,
+        line-height: normal,
+        letter-spacing: -0.18px
+      )
+  ),
+  '18-12': (
+    'small': (
+      font-size: 12px,
+      line-height: normal,
+      letter-spacing: -0.12px
+    ),
+    'medium': (
+      font-size: 18px,
+      line-height: normal,
+      letter-spacing: -0.18px
+    )
+  ),
+  '16-16': (
+    'small': (
+      font-size: 16px,
+      line-height: 1.857,
+      letter-spacing: 0
+    ),
+    'medium': (
+      font-size: 16px,
+      line-height: 1.5,
+      letter-spacing: 0
+    )
+  ),
+  '16-12': (
+    'small': (
+      font-size: 12px,
+      line-height: normal,
+      letter-spacing: -0.12px
+    ),
+    'medium': (
+      font-size: 16px,
+      line-height: normal,
+      letter-spacing: -0.16px
+    )
+  ),
+  '15-15': (
+    'small': (
+      font-size: 15px,
+      line-height: 1.27,
+      letter-spacing: -0.15px
+    )
+  ),
+  '15-12': (
+    'small': (
+      font-size: 12px,
+      line-height: normal,
+      letter-spacing: -0.12px
+    ),
+    'medium': (
+      font-size: 15px,
+      line-height: normal,
+      letter-spacing: -0.15px
+    )
+  ),
+  '13-13': (
+    'small': (
+      font-size: 13px,
+      line-height: normal,
+      letter-spacing: -0.13px
+    )
+  ),
+  '12-11': (
+    'small': (
+      font-size: 11px,
+      line-height: 1.91,
+      letter-spacing: -0.11px
+    ),
+    'medium': (
+      font-size: 12px,
+      line-height: 1.42,
+      letter-spacing: -0.12px
+    )
+  )
+);

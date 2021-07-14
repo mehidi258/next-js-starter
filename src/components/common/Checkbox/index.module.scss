@@ -1,0 +1,17 @@
+.checkbox {
+  display: flex;
+  align-items: center;
+  color: #525f7a;
+  font-size: 14px;
+  margin-bottom: 11px;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__label {
+    margin-left: 14px;
+    line-height: 1;
+  }
+}

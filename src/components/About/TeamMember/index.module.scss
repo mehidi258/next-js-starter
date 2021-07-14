@@ -1,0 +1,69 @@
+// team
+.team {
+  width: 100%;
+  max-width: 370px;
+  height: 348px;
+
+  &:hover {
+    .team__bio {
+      text-align: left;
+      bottom: 53px;
+      height: calc(100% - 100px);
+    }
+  }
+
+  &__avatar {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    img {
+      width: 100%;
+      height: 100%;
+      border-radius: 5px;
+      object-fit: cover;
+    }
+  }
+
+  &__bio {
+    position: absolute;
+    left: 33px;
+    bottom: -50px;
+    width: calc(100% - 66px);
+    height: 106px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 5px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: all 0.25s;
+    // pointer-events: none;
+  }
+
+  &__name {
+    font-size: 18px;
+    margin: 0 0 10px;
+  }
+
+  &__designation {
+    font-size: 14px;
+    color: #666;
+  }
+
+  &__social {
+    ul {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      li {
+        margin-right: 18px;
+      }
+
+      li a:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

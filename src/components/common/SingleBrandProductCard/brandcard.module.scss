@@ -1,0 +1,79 @@
+/* ********** Responsive view: Mobile layout ********** */
+/* ********** Responsive view: Tablet layout ********** */
+
+.single_brand_product_box {
+  background-color: transparent;
+  border-radius: 8px;
+  padding: 10px;
+
+  &:hover {
+    background-color: #ffffff;
+    box-shadow: 0px 24px 60px rgba(0, 0, 0, 0.09);
+  }
+
+  img {
+    border-radius: 8px;
+    height: 200px;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+  }
+}
+
+.info_card {
+  display: flex;
+  margin-top: 20px;
+  align-items: center;
+
+  a {
+    color: #3e485d;
+    font-size: 24px;
+    font-weight: 600;
+    text-decoration: none;
+    padding-left: 10px;
+  }
+}
+
+.logo {
+  background-color: #f3f3f3;
+  border-radius: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+
+  svg {
+    fill: #000000;
+    max-width: 78%;
+  }
+}
+
+@media (max-width: 767px) {
+  .info_card {
+    margin-top: 15px;
+
+    a {
+      font-size: 16px;
+    }
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .info_card {
+    margin-top: 15px;
+
+    a {
+      font-size: 16px;
+    }
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+}
